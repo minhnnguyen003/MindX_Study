@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESSION3-VIDEO</title>
+    <script src="exercise.js"></script>
+    <style>
+    .ex{
+        border: 1px solid black;
+        width: 110px;
+        height: 22px;
+        margin-bottom: 10px;
+        background-color: cornsilk;
+        color: crimson;
+    }
+    #questionWindow{
+        border: 10px solid gray;
+        border-bottom: 0px;
+        width: 640px;
+        height: 60px;
+        padding: 10px;
+        font-size: larger;
+    }
+    #resultWindow{
+        border: 10px solid gray;
+        border-top: 5px solid gray;
+        width: 640px;
+        height: 420px;
+        padding: 10px;
+        font-size: larger;
+    }
+    </style>
+</head>
+<body>
+<table><tr><td><pre>
+    <button class="ex" onclick="init()">Init</button>
+    <button class="ex" onclick="create()">Create</button>
+    <button class="ex" onclick="read()">Read</button>
+    <button class="ex" onclick="update1()">Update 1</button></pre></td>
+<td><pre>
+    <button class="ex" onclick="update2()">Update 2</button>
+    <button class="ex" onclick="delete1()">Delete 1</button>
+    <button class="ex" onclick="delete2()">Delete 2</button>
+    <button class="ex" onclick="readAll1()">Read All 1</button></pre></td>
+<td><pre>
+    <button class="ex" onclick="updateAll()">Update All</button>
+    <button class="ex" onclick="readAll2()">Read All 2</button>
+    <button class="ex" onclick="readAll3()">Read All 3</button>
+    <button class="ex" onclick="purposeOfWhile1()">P Of While 1</button></pre></td>
+<td><pre>
+    <button class="ex" onclick="purposeOfWhile2()">P Of While 2</button>
+    <button class="ex" onclick="sortArray()">Sort Array</button>
+    <button class="ex" onclick="evenOddArray()">Even-Odd-Array</button>
+    <button class="ex" onclick="delSameTwoArray()" style="width: 140px;">Del Same Two Array</button></pre></td></tr></table>
+    <div id="questionWindow"></div>
+    <div id="resultWindow"></div>
+</body>
+</html>

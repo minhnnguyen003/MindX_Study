@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="menu">
+            <div class="menu_logo"><img src="./image/Logo Color.png" alt="logo"></div>
+            <ul class="menu_option">
+                <li class="option text_one" id="option_menu">
+                    <p>Home</p>
+                    <rect></rect>
+                </li>
+                <li class="option text_one" id="option_feature">
+                    <p>Features</p>
+                    <rect></rect>
+                </li>
+                <li class="option text_one" id="option_pricing">
+                    <p>Pricing</p>
+                    <rect></rect>
+                </li>
+                <li class="option text_one" id="option_blog">
+                    <p>Blog</p>
+                    <rect></rect>
+                </li>
+        </div>
+        <button class="menu_button text_one button">Get Started</button>
+    </div>
+    <div id="content_one">
+        <div class="one_left">
+            <p class="text_one one_text_1">Grow your subscription business</p>
+            <p class="text_two one_text_2">Outcome-centered products that reduce churn, optimize pricing, and grow your
+                subscription business end-to-end.</p>
+            <div class="one_button">
+                <button class="one_button_1 text_one button">Get Started</button>
+                <button class="one_button_2 button fa fa-arrow-down"></button>
+            </div>
+        </div>
+        <div class="one_right">
+            <img src="./image/Hero 3D.png" alt="banner_1">
+        </div>
+    </div>
+    <div id="group">
+        <ul class="group_menu">
+            <li><img src="./image/Group1.png" alt="group1"></li>
+            <li><img src="./image/Group2.png" alt="group2"></li>
+            <li><img src="./image/Group3.png" alt="group3"></li>
+            <li><img src="./image/Group4.png" alt="group4"></li>
+            <li><img src="./image/Group5.png" alt="group5"></li>
+        </ul>
+    </div>
+    <div id="content_two">
+        <div class="two_left">
+            <img src="./image/Content Image 02.png" alt="img_02">
+        </div>
+        <div class="two_right">
+            <p class="text_one padding_one">Subscription index</p>
+            <p class="text_two padding_two">A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p>
+            <p class="text_one learn_more">Learn more</p>
+        </div>
+    </div>
+    <div id="content_three">
+        <div class="three_left">
+            <p class="text_one padding_one">In-depth metrics</p>
+            <p class="text_two padding_two">Accurate, real-time reporting at your fingertips. Getting data has never been easier.</p>
+            <p class="text_one learn_more">Learn more</p>
+        </div>
+        <div class="three_right">
+            <img src="./image/Content Image.png" alt="img_01">
+        </div>
+    </div>
+    <div id="content_icon">
+        <div class="icon_left icon_cont">       
+            <img src="./image/Icon 001.png" alt="icon_01">     
+            <p class="text_one padding_three">Benchmarks</p>
+            <p class="text_two padding_four">See how you stack up against comparable companies in similar stages.</p>
+        </div>
+        <div class="icon_center icon_cont">
+            <img src="./image/Icon 002.png" alt="icon_02">
+            <p class="text_one padding_three">Pricing Audit</p>
+            <p class="text_two padding_four">Benchmark the health of your monetization and pricing strategy.</p>
+        </div>
+        <div class="icon_right icon_cont">
+            <img src="./image/Icon 003.png" alt="icon_03">
+            <p class="text_one padding_three">Retention Audit</p>
+            <p class="text_two padding_four">Audit where revenue leakage exists and where you can increase retention.</p>
+        </div>
+    </div>
+    <div id="pricing">
+        <div class="pricing_content">
+            <p class="text_one pricing_title">Get the right plan for future product.</p>
+            <div class="pricing_switch">
+                <button class="switch_but text_one switch_but_left">Yearly</button>
+                <button class="switch_but text_one switch_but_right">Monthly</button>
+            </div>
+        </div>
+        <div class="pricing_table">
+            <div class="table_one">
+                <p class="text_two text_table_one">Starter</p>
+                <p class="text_one text_table_two">Free</p>
+                <p class="text_two text_table_one">1 Website</p>
+                <p class="text_two text_table_one">5 GB Hosting</p>
+                <p class="text_two text_table_one">Limited Support</p>
+                <button class="button table_button_one">Get Started</button>
+            </div>
+            <div class="table_two">
+                <p class="text_two text_table_one">Premium</p>
+                <p class="text_one text_table_two">$29/month</p>
+                <p class="text_two text_table_one">10 Website</p>
+                <p class="text_two text_table_one">15 GB Hosting</p>
+                <p class="text_two text_table_one">Premium Support</p>
+                <button class="button table_button_two">Get Started</button>
+            </div>
+            <div class="table_one">
+                <p class="text_two text_table_one">Enterprise</p>
+                <p class="text_one text_table_two">$49/month</p>
+                <p class="text_two text_table_one">Unlimited Website</p>
+                <p class="text_two text_table_one">50 GB Hosting</p>
+                <p class="text_two text_table_one">Premium Support</p>
+                <button class="button table_button_one">Get Started</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        Array.from(document.querySelectorAll(".option")).forEach((dom) => {
+            dom.addEventListener('mouseover', () => {
+                document.querySelector(`#${dom.id} rect`).style.display = "block";
+            })
+            dom.addEventListener('mouseout', () => {
+                document.querySelector(`#${dom.id} rect`).style.display = "none";
+            })
+        })
+    </script>
+</body>
+
+</html>

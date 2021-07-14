@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00000045;
+}
+
+.content {
+    width: 1180px;
+    height: auto;
+    background: linear-gradient(rgb(232 213 207 / 87%), rgb(204 203 159));
+    margin: auto;
+    padding: 20px;
+}
+
+#store_content {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.store_type {
+    width: 320px;
+    min-height: 480px;
+    border: 2px solid rgb(190, 185, 185);
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+
+.type_title {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(20, 73, 13);
+    text-align: center;
+}
+
+#store_icon {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: #5a5959;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.icon:hover {
+    background: rgb(182, 181, 181);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.style_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    margin: 10px 10px 0px 10px;
+    border: 1px solid rgb(190, 185, 185);
+    border-radius: 3px;
+    padding: 3px 10px;
+    height: auto;
+}
+
+span {
+    float: right;
+}
+
+p {
+    margin: 3px;
+    font-size: 18px;
+    color: rgb(20, 73, 13);
+}
+
+.sell {
+    background: rgb(216, 79, 15);
+    color: white;
+    border: 0.01px solid rgb(216, 79, 15);
+    border-radius: 6px;
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sell:hover {
+    background: rgb(151, 48, 48);
+}
+
+#add {
+    position: absolute;
+    background: white;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+
+custom-add {
+    display: none;
+}
+
+.fa-close {
+    color: #ada2a2e0;
+    padding-left: 150px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-close:hover {
+    color: rgb(158, 158, 158);
+}
+
+form {
+    background: white;
+    width: 360px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px 50px 0px 50px;
+    font-size: 18px;
+}
+
+.add_close{
+    position: static !important;
+    float: right;
+    margin-right: -48px;
+    font-size: 32px;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 240px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.result {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button_add {
+    background: green;
+}
+
+.button_add:hover {
+    background: rgb(0, 41, 0);
+}
+
+.button_cancel {
+    background: gray;
+}
+
+.button_cancel:hover {
+    background: rgb(0, 41, 0);
+}
+
+select {
+    height: 30px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+#sell {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+    width: 720px;
+    height: 480px;
+}
+
+.sell_close {
+    float: right;
+    margin: 5px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table {
+    width: 640px;
+    margin: 20px auto;
+}
+
+#sumCost {
+    float: right;
+    margin-right: 80px;
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.count {
+    width: 20px;
+}
+
+.setTime{
+    width: 235px;
+}
+
+.setTime #seconds {
+    text-align: right;
+}
+
+.setTime #viewTime{
+    text-align: right;
+}
+
+.randomString {
+    width: 60%;
+}
+
+.randomString #reload {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: bolder;
+    float: right;
+    display: flex;
+}
+
+.randomString #reload #iconReload {
+    width: 10px;
+    padding-right: 5px;
+}
+
+.viewString {
+    padding: 40px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.viewString #quoteText {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.viewString #quoteAuthor {
+    font-size: 12px;
+}
+

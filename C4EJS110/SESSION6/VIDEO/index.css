@@ -1,0 +1,28 @@
+.ex1 {
+    color: red;
+}
+
+#ex2 {
+    background-color: #00FF00;
+}
+
+.ex3 {
+    font-size: 24px;
+}
+
+.ex4 {
+    font-size: 3em;
+    background: wheat
+}
+
+#div2 {
+    color: blue;
+}
+
+.item > span {
+    font-size: 18px;
+}
+
+.item div > span {
+    font-style: italic;
+}

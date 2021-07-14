@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="icon">
+            <button class="icon" id="icon_add" onclick="import('./supports.js').then(e => e.getFormAdd())"><i class="material-icons">&#xe7fe;</i></button>
+        </div>
+        <div id="add">
+            <form>
+                <i class="fa fa-close add_close" onclick="import('./supports.js').then(e => e.closeFormAdd())"></i><br><br>
+                <label for="add_name">Tên:</label><br>
+                <input type="text" id="add_name" placeholder="Nhập tên..." autocomplete="off"><br>
+                <label for="add_age">Tuổi:</label><br>
+                <input type="text" id="add_age" placeholder="Nhập tuổi..." autocomplete="off"><br>
+                <label>Giới tính:</label>
+                <input type="radio" id="add_male" name="gender" value="male">
+                <label for="male">Nam</label>
+                <input type="radio" id="add_female" name="gender" value="female">
+                <label for="female">Nữ</label><br>
+            </form>
+            <p id="add_result"></p>
+            <div id="button">
+                <button class="button" id="button_add" onclick="import('./main.js').then(e => e.addList())">Add</button>
+                <button class="button" id="button_cancel" onclick="import('./supports.js').then(e => e.closeFormAdd())">Cancel</button>
+            </div>
+        </div>
+        <div id="title">Danh sách nhân viên</div>
+        <ul id="profile">
+        </ul>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="store" class="content">
+        <div id="store_icon">
+            <button class="icon" id="store_add" onclick="import('./supportsForm.js').then(e => e.getAddForm())">+</button>
+            <button class="icon" id="store_cost" onclick="import('./processSell.js').then(e => e.getCost())">$</button>
+        </div>
+        <div id="add">
+            <form>
+                <i class="fa fa-close add_close" class="fa fa-close" onclick="import('./supportsForm.js').then(e => e.closeAddForm())"></i><br><br>
+                <div id="add_title" class="title">Thêm sản phẩm mới</div>
+                <label for="add_id">ID sản phẩm:</label><br>
+                <input type="text" id="add_id" placeholder="Nhập ID sản phẩm..." autocomplete="off"><br>
+                <label for="add_name">Tên sản phẩm:</label><br>
+                <input type="text" id="add_name" placeholder="Nhập tên sản phẩm..." autocomplete="off"><br>
+                <label for="add_cost">Giá:</label><br>
+                <input type="text" id="add_cost" placeholder="Nhập giá..." autocomplete="off"><br>
+                <label for="type_product">Loại sản phẩm:</label>
+                <select id="type_product" onclick="import('./supportsForm.js').then(e => e.getChangeForm())">
+                    <option value="none"></option>
+                    <option value="houseware">Đồ gia dụng</option>
+                    <option value="clothes">Quần áo</option>
+                    <option value="food">Thức ăn</option>
+                </select>
+                <div class="form_houseware">
+                    <label for="add_reli">Độ bền:</label><br>
+                    <input type="text" id="add_reli" placeholder="Nhập độ bền..." autocomplete="off"><br>
+                </div>
+                <div class="form_clothes">
+                    <label for="add_origin">Xuất xứ:</label><br>
+                    <input type="text" id="add_origin" placeholder="Nhập xuất xứ..." autocomplete="off"><br>
+                    <label for="add_mater">Chất liệu:</label><br>
+                    <input type="text" id="add_mater" placeholder="Nhập chất liệu..." autocomplete="off"><br>
+                </div>
+                <div class="form_food">
+                    <label for="add_fla">Vị:</label><br>
+                    <input type="text" id="add_fla" placeholder="Nhập vị..." autocomplete="off"><br>
+                </div>
+            </form>
+            <p id="add_result" class="result"></p>
+            <div class="center">
+                <button class="button button_add" id="button_add" onclick="import('./processAdd.js').then(e => e.addProduct())">Add</button>
+                <button class="button button_cancel" id="button_cancel"
+                onclick="import('./supportsForm.js').then(e => e.closeAddForm())">Cancel</button>
+            </div>
+        </div>
+        <div id="sell">
+            <i class="fa fa-close sell_close" class="fa fa-close" onclick="import('./processSell.js').then(e => e.closeCost())"></i><br><br>
+            <div id="sell_title" class="title">Doanh thu</div>
+            <div id="sell_content">
+                <table>
+                </table>
+                <div id="sumCost">Tổng tiền: 0$</div>
+            </div>
+        </div>
+        <div id="store_title" class="title">Quản lý cửa hàng</div>
+        <div id="del_result"></div>
+        <div id="store_content">
+            <div id="store_houseware" class="store_type">
+                <div class="type_title">Đồ gia dụng<span>-10%</span></div>
+                <hr>
+                <ul id="houseware" class="list_product">
+                </ul>
+            </div>
+            <div id="store_clothes" class="store_type">
+                <div class="type_title">Quần áo<span>-5%</span></div>
+                <hr>
+                <ul id="clothes" class="list_product">
+                </ul>
+            </div>
+            <div id="store_food" class="store_type">
+                <div class="type_title">Thức ăn<span>-2%</span></div>
+                <hr>
+                <ul id="food" class="list_product">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</html>

@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e452930;
+}
+
+#employee {
+    width: 1180px;
+    min-height: 240px;
+    background: linear-gradient(rgb(221 232 207), rgb(204 204 159));
+    margin: auto;
+    padding: 20px;
+}
+
+#employee_title {
+    font-size: 34px;
+    text-align: center;
+}
+
+#employee_content {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+
+.employee {
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 3px;
+    width: 180px;
+    margin: 20px 5px 5px 20px;
+    font-size: 14px;
+}
+
+.employee_img {
+    background: white;
+    background-size: 100% 100%;
+    margin: 1px;
+    padding: 1px 2px 0px 0px;
+}
+
+img{
+    width: 175px;
+}
+
+.fa-edit, .fa-close {
+    color: rgb(128, 128, 128);
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-edit {
+    margin: 2px 5px 0px 0px;
+}
+
+.fa-edit, .fa-close:hover {
+    color: black;
+}
+
+.employee_name, .employee_age, .employee_create {
+    text-align: center;
+    padding: 3px 0px;
+    background: #c5cec5bf;
+}
+
+#icon {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: #5a5959;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.icon:hover {
+    background: rgb(182, 181, 181);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+
+custom-add {
+    display: none;
+}
+
+custom-update {
+    display: none;
+}
+
+.form {
+    position: absolute;
+    background: white;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+
+form {
+    background: white;
+    width: 360px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px 50px 0px 50px;
+    font-size: 18px;
+}
+
+.add_close{
+    position: static !important;
+    float: right;
+    margin-right: -48px;
+    font-size: 32px;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 240px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.result {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button_add {
+    background: green;
+}
+
+.button_add:hover {
+    background: rgb(0, 41, 0);
+}
+
+.button_cancel {
+    background: gray;
+}
+
+.button_cancel:hover {
+    background: rgb(0, 41, 0);
+}

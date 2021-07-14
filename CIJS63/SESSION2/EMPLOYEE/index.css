@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00000045;
+}
+
+.container {
+    width: 1180px;
+    height: auto;
+    background: linear-gradient(rgb(221 232 207), rgb(204 204 159));
+    margin: auto;
+    padding: 20px;
+}
+
+#show_group {
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.content_profile {
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 3px;
+    width: 180px;
+    margin: 20px 5px 5px 20px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile_img {
+    background: white;
+    background-size: 100% 100%;
+    margin: 1px;
+    padding: 1px 2px 0px 0px;
+}
+
+img{
+    width: 175px;
+}
+
+.staff_name, .staff_id, .staff_create {
+    padding: 3px 0px;
+    background: #c5cec5bf;
+}
+
+.fa-close {
+    color: #ada2a2e0;
+    padding-left: 150px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-close:hover {
+    color: rgb(158, 158, 158);
+}
+
+.icon_fixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: #5a5959;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.icon:hover {
+    background: rgb(182, 181, 181);
+}
+
+.form {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+
+form {
+    background: white;
+    width: 360px;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px 50px 0px 50px;
+    font-size: 18px;
+}
+
+.add_close{
+    position: static !important;
+    float: right;
+    margin-right: -48px;
+    font-size: 32px;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 240px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.result {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.button_add {
+    background: green;
+}
+
+.button_add:hover {
+    background: rgb(0, 41, 0);
+}
+
+.button_cancel {
+    background: gray;
+}
+
+.button_cancel:hover {
+    background: rgb(0, 41, 0);
+}
