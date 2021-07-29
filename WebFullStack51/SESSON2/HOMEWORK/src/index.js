@@ -5,7 +5,6 @@ $(document).ready(() => {
 
   const callAPI = async (username, resolveCallAPI, rejectCallAPI) => {
     const call = await fetch(`https://api.github.com/users/${username}`);
-    console.log(call)
     if (call.ok) {
         call.json().then(result => resolveCallAPI(result));
     } else {
