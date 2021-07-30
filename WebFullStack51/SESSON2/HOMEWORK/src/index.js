@@ -4,12 +4,17 @@ $(document).ready(() => {
   // call api
 
   const callAPI = async (username, resolveCallAPI, rejectCallAPI) => {
-    const call = await fetch(`https://api.github.com/users/${username}`);
-    console.log(call)
-    if (call.ok) {
+    try {
+      const call = await fetch(`https://api.github.com/users/${username}`);
+      if(call.ok) {
         call.json().then(result => resolveCallAPI(result));
-    } else {
-        rejectCallAPI(new Error("Không tìm thấy user bạn yêu cầu"));
+      }
+      else {
+        rejectCallAPI(new Error("Không tìm thấy user yêu cầu!"));
+      }
+    } 
+    catch (error) {
+        rejectCallAPI(new Error(error));
     }
   };
 
