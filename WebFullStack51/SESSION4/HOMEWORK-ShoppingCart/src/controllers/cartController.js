@@ -8,12 +8,6 @@ class CartController {
         res.render('cart/cart',  {cart})
     }
 
-    // [GET] /cart/update/:id_fruit
-    getFruitCart (req, res) {
-        const indexCart = cart.findIndex((fruit) => req.params.id_fruit == fruit.id);
-        res.render('cart/cartUpdate', {fruitUpdate: cart[indexCart]});
-    }
-
     // [POST] /cart/:id_fruit
     add (req, res) {
         const index = listFruits.findIndex((fruit) => req.params.id_fruit == fruit.id);
@@ -32,7 +26,7 @@ class CartController {
         else {
             cart[indexCart].amount =  Number(cart[indexCart].amount) + Number(req.body.amount);
         }
-        res.redirect('/cart');
+        res.redirect('/home');
     }
 
     // [PUT] /cart/:id_fruit

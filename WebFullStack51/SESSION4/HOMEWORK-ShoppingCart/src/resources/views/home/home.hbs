@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="col-md-2 text-center margin-auto">
                                     <span data-bs-toggle="tooltip" data-bs-placement="top" title="Buy">
-                                        <a href="/home/{{this.id}}/buy"><i class="fas fa-shopping-cart fs-3"></i></a>
+                                        <i class="fas fa-shopping-cart fs-3" data-bs-toggle="modal" data-bs-target="#buyFruitModal" data-id={{this.id}} data-name={{this.name}} data-image={{this.image}} data-origin={{this.origin}} data-price={{this.price}}></i>
                                     </span>
                                 </div>
                             </div>
@@ -38,4 +38,5 @@
         {{> footer}}
     </div>  
 </div>
+{{> buyFruitModal}}
 

@@ -36,13 +36,13 @@
                             <td>{{this.amount}}</td>
                             <td class="total">{{mul this.price this.amount}}</td>
                             <td>
-                                <a href="/cart/update/{{this.id}}"><i class="fas fa-edit"></i></a>
+                                <i class="fas fa-edit" data-bs-toggle="modal" data-bs-target="#updateFruitModal" data-id={{this.id}} data-name={{this.name}} data-image={{this.image}} data-origin={{this.origin}} data-price={{this.price}} data-amount="{{this.amount}}" data-total="{{mul this.price this.amount}}"></i>
                                 <i class="fas fa-minus-circle delete-icon" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="{{this.id}}" data-name="{{this.name}}"></i>
                             </td>
                         </tr>
                     {{/each}}
                     <tr>
-                        <th colspan="1">Totals</th>
+                        <th colspan="1">Totals($)</th>
                         <td colspan="4"></td>
                         <td colspan="1" class="totals">120$</td>
                         <td colspan="1"></td>
@@ -57,7 +57,7 @@
                 listTotal.forEach((dom) => {
                     sum += Number(dom.textContent);
                 })
-                totals.textContent = sum + "$";
+                totals.textContent = sum;
             </script>
         {{else}}
         <p class="text-center mt-5">Cart is empty!</p>
@@ -66,3 +66,4 @@
 </div>
 {{> deleteModal}}
 {{> addCartModal}}
+{{> updateFruitModal}}

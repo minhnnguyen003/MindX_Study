@@ -78,18 +78,15 @@ i:hover {
     left: 30px;
 }
 
-.home-buy .card{
+.fruit-modal .card{
     border: none;
-    width: 90%;
-    margin: 100px auto;
-    padding-left: 100px;
 }
 
-.home-buy .card-text {
+.fruit-modal .card-text {
     font-size: 20px;
 }
 
-.home-buy input {
+.fruit-modal input {
     width: 75px;
     border: 0.5px solid rgb(179, 178, 178);
     border-radius: 2px;
@@ -97,13 +94,8 @@ i:hover {
     outline: unset;
 }
 
-.home-buy .buyBtn {
-    width: 100px;
-}
-
-.home-buy img {
-    width: 390px;
-    height: 287px;
+.fruit-modal img {
+    height: 240px;
     object-fit: contain;
 }
 
